@@ -1,0 +1,12 @@
+.month-div {
+    position: absolute;
+    width: 100%;
+    /* border: 10px solid red; */
+    height: 900px;
+}
+
+@media (max-width: 600px) {
+    .month-div {
+        height: 800px;
+    }
+}
