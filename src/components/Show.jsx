@@ -96,6 +96,7 @@ const Show = (props) => {
                                                                 type={day}
                                                                 size="large"
                                                                 key={index}
+                                                                className="icon-style-show"
                                                             />
                                                         )
                                                     })

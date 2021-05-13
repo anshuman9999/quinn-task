@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
+import './Icon.css'
 
-const Icon = ({ type, size }) => {
+const Icon = ({ type, className }) => {
 
     const [typeText, setTypeText] = useState("")
     const [typeColor, setTypeColor] = useState("")
@@ -36,15 +37,15 @@ const Icon = ({ type, size }) => {
     return (
         <div
             style={{
-                margin: `${size === "large" ? "0 5px" : "0 1px"}`,
-                width: `${size === "large" ? "20px" : "10px"}`,
-                height: `${size === "large" ? "20px" : "10px"}`,
                 background: `${typeColor}`,
-                padding: "2px",
-                borderRadius: "50%",
-                fontSize: `${size === "large" ? "0.8rem" : "0.6rem"}`,
-                textAlign: "center"
             }}
+
+            className={
+                className
+                ? className
+                : "icon-style"
+            }
+
         >
             {typeText}
         </div >
