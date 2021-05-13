@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import MonthGrid from './MonthGrid';
 import { MonthNames } from '../data';
 import "./Month.css"

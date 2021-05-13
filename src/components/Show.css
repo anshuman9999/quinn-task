@@ -50,7 +50,6 @@
     border-radius: 5px;
 }
 
-
 .main-content-div {
     height: 35%;
     background-color: #fff;
@@ -67,7 +66,7 @@
 .icons-div {
     display: flex;
     justify-content: space-between;
-    padding: 0 10px ;
+    padding: 0 10px;
     padding-top: 10px;
 }
 
@@ -104,7 +103,6 @@
     justify-content: center;
     align-items: center;
 }
-
 
 .next-btn-div {
     width: 10%;
@@ -151,7 +149,6 @@
     transform: scale(2);
 }
 
-
 .date-div {
     margin: 10px 0;
     font-size: 1.2rem;
@@ -159,7 +156,7 @@
 }
 
 .text-div {
-    margin: 10px 0;
+    margin: 20px 0;
     font-size: 1rem;
 }
 
@@ -171,28 +168,25 @@
     .show-overlay {
         align-items: center;
     }
-
     .main-image-div {
         height: 55%;
     }
-
     .main-content-div {
         height: 45%;
     }
-
     .icons-div {
         height: 10%;
     }
-
     .content-div {
         height: 70%;
     }
-
     .stars {
         transform: scale(0.8);
     }
-
     .icons {
         width: 50%;
+    }
+    .text-div {
+        margin: 10px 0;
     }
 }

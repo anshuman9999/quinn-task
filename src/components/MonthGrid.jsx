@@ -26,18 +26,10 @@ function MonthGrid({ date }) {
   const month = date.getMonth()
 
   const value = moment([year, month])
-  const daysInMonth = value.daysInMonth()
-
-  const tempDate = new Date(`${year}`, `${month}`, `${daysInMonth}`)
-  const lastDate = moment(tempDate)
-  // console.log(lastDate)
-
   const calendar = []
 
   const startDay = value.clone().startOf("month").startOf("week")
   const endDay = value.clone().endOf("month").endOf("week")
-  // const endDay = lastDate
-  // console.log([startDay, endDay])
   const day = startDay.clone().subtract(1, "day")
 
   while (day.isBefore(endDay, "day")) {

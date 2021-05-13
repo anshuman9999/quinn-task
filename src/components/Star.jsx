@@ -2,13 +2,13 @@ import React, { useEffect, useState } from 'react'
 
 const Star = (props) => {
     const [rating, setRating] = useState(null)
-    const [hover, setHover] = useState(null)
+    const [hover] = useState(null)
 
     useEffect(() => {
         if (props.rating) {
             setRating(props.rating)
         }
-    }, [])
+    }, [props.rating])
 
     return (
         <div className={props.className} >

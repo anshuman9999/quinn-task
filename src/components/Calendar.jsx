@@ -1,7 +1,7 @@
 import React from "react";
 import { returnNthMonth, returnNextMonth, returnPreviousMonth } from '../utils';
 import Weeks from './Weeks';
-import Month, { MonthName } from './Month';
+import Month from './Month';
 const MONTH_HEIGHT = (window.innerWidth >= 600) ? 1000 : 900;
 const HEIGHT = 1000000;
 

@@ -82,7 +82,7 @@ const Show = (props) => {
 
                             <div className="main-img-wrapper" >
                                 <div className="main-image-div" >
-                                    <img src={posts[indexState].media[0].mediaurl} className="image-div-image" ></img>
+                                    <img src={posts[indexState].media[0].mediaurl} className="image-div-image" alt="show-img" ></img>
                                 </div>
 
                                 <div className="main-content-div" >

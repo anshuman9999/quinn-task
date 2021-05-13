@@ -59,7 +59,7 @@ const Day = ({ day, fullDate, posts, bgChange }) => {
     "Oct", "Nov", "Dec"
   ]
 
-  posts.map((post, index) => {
+  posts.forEach((post, index) => {
     const calendarDateObj = new Date(post.calendardatetime)
     if (calendarDateObj.getFullYear() === fullDate.getFullYear()
       && calendarDateObj.getMonth() === fullDate.getMonth()
@@ -116,6 +116,7 @@ const Day = ({ day, fullDate, posts, bgChange }) => {
                 <img
                   src={day.post.media[0].mediaurl}
                   className="post-img"
+                  alt="post-img"
                 />
               </div>
 
