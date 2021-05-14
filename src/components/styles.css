@@ -67,6 +67,7 @@ html {
     font-weight: bold;
     text-transform: uppercase;
     margin: auto;
+    border-right: 1px solid #e7e7e7;
 }
 
 .matched-day {

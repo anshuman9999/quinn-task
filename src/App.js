@@ -1,7 +1,8 @@
 import React from "react";
 import Calendar from './components/Calendar';
-import Show from './components/Show'
 import { Route } from 'react-router-dom'
+// import ShowDup from "./components/ShowDup";
+import Show from "./components/Show";
 
 const App = () => {
   return (

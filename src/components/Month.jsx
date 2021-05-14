@@ -1,20 +1,22 @@
 import React from "react";
 import MonthGrid from './MonthGrid';
-import { MonthNames } from '../data';
+import { months } from '../data';
 import "./Month.css"
 
 export const MonthName = ({ date }) => {
+
   const month = date.getMonth();
   const year = date.getFullYear();
   return (
     <div
       style={{
-        fontSize: "1.2rem",
+        fontSize: "1.5rem",
         marginTop: "1rem",
-        marginBottom: "1rem"
+        marginBottom: "1rem",
+        fontWeight: "bold"
       }}
     >
-      {`${MonthNames[month]} ${year}`}
+      {`${months[month]} ${year}`}
     </div>
   )
 };
