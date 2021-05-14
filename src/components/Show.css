@@ -120,6 +120,7 @@
     border-radius: 60%;
     cursor: pointer;
     transition: all 0.2s ease;
+    font-size: 1.5rem;
 }
 
 .prev-btn:hover {
@@ -133,12 +134,19 @@
     cursor: pointer;
     margin: auto;
     transition: all 0.2s ease;
+    font-size: 1.5rem;
 }
 
 .close-btn {
     cursor: pointer;
     transform: scale(1.5);
-    transition: all 0.2s ease;
+    transition: all 0.1s ease;
+    background-color: rgb(100, 100, 100, 0.6);
+    width: 22px;
+    height: 22px;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 50%;
 }
 
 .close-btn:hover {

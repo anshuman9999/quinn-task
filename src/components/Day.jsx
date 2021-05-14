@@ -74,7 +74,11 @@ const Day = ({ day, fullDate, posts, bgChange }) => {
 
   return (
     <div
-      className="day"
+      className={
+        !day.match
+        ? "day"
+        : "day post-day"
+      }
       onClick={
         () => {
           if (!day.match) return
@@ -89,7 +93,7 @@ const Day = ({ day, fullDate, posts, bgChange }) => {
       }
 
       style={{
-        backgroundColor: `${bgChange === 0 ? "#e2e2e2" : "#fff"}`
+        backgroundColor: `${bgChange === 0 ? "#e1e1e1" : "#fff"}`
       }}
 
     >

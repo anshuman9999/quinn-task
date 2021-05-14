@@ -43,6 +43,10 @@ html {
     cursor: pointer;
 }
 
+.post-day:hover {
+    opacity: 0.8;
+}
+
 .week {
     display: flex;
 }
