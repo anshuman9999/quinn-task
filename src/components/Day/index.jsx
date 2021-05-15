@@ -1,7 +1,7 @@
 import { useHistory } from "react-router"
-import Icon from "./Icon"
-import Star from './Star'
-import { months } from '../data'
+import Icon from "../Icon"
+import Star from '../Star'
+import { months } from '../../data'
 
 const Day = ({ day, fullDate, posts, bgChange }) => {
 

@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import axios from 'axios'
-import Day from './Day'
+import Day from '../Day'
+import { postData } from '../../data'
 import moment from "moment"
-import "./styles.css"
-import { postData } from "../data";
+import "../styles.css"
 
 function MonthGrid({ date }) {
 
@@ -16,7 +16,6 @@ function MonthGrid({ date }) {
         postData
       )
       
-      console.log("in")
       setPosts(response.data.responseobjects[0].posts)
     }
 

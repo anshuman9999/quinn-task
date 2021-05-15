@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import Icon from './Icon';
+import Icon from '../Icon';
 import './Show.css'
-import Star from './Star';
+import Star from '../Star';
 import {useHistory} from 'react-router-dom'
 
 const monthNames = ["January", "February", "March", "April", "May", "June",

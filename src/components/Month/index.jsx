@@ -1,6 +1,6 @@
-import React from "react";
-import MonthGrid from './MonthGrid';
-import { months } from '../data';
+import React, { useEffect } from "react";
+import MonthGrid from '../MonthGrid';
+import { months } from '../../data';
 import "./Month.css"
 
 export const MonthName = ({ date }) => {
@@ -23,10 +23,6 @@ export const MonthName = ({ date }) => {
 
 
 const Month = ({ date, top }) => {
-
-  // useEffect(() => {
-  //   console.log("month loaded")
-  // }, [top])
 
   return (
     <div

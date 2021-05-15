@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 
 const Star = (props) => {
     const [rating, setRating] = useState(null)
-    const [hover] = useState(null)
 
     useEffect(() => {
         if (props.rating) {
@@ -28,7 +27,7 @@ const Star = (props) => {
                                             value={rating}
                                         />
                                         <i className="fas fa-star"
-                                            style={{ color: ratingValue <= (hover || rating) ? "#96c5dd" : "#e4e5e9", fontSize: `${props.size / 10}rem` }}
+                                            style={{ color: ratingValue <= rating ? "#96c5dd" : "#e4e5e9", fontSize: `${props.size / 10}rem` }}
                                         ></i>
                                     </label>
                                 )

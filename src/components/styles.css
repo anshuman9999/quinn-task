@@ -40,10 +40,10 @@ html {
     z-index: 1;
     text-align: center;
     border: 1px solid #ebebeb;
-    cursor: pointer;
 }
 
 .post-day:hover {
+    cursor: pointer;
     opacity: 0.8;
 }
 
